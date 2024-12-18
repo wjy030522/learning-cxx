@@ -61,6 +61,23 @@ int main(int argc, char **argv) {
         {"r","d","d"},
     };
 
+    std::cout << "Problems[0]: ";
+    for (const auto& record : problems[0]) {
+        std::cout << record << " ";
+    }
+    std::cout << std::endl;
+
+    std::cout << "Problems[1]: ";
+    for (const auto& record : problems[1]) {
+        std::cout << record << " ";
+    }
+    std::cout << std::endl;
+
+    std::cout << "Problems[2]: ";
+    for (const auto& record : problems[2]) {
+        std::cout << record << " ";
+    }
+    std::cout << std::endl;
     // ---- 不要修改以下代码 ----
 
     for (auto i = 0; i < 3; ++i) {
