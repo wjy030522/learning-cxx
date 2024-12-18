@@ -2,7 +2,7 @@
 #include <memory>
 #include <string>
 #include <vector>
-
+#include<cstring>
 // READ: `std::unique_ptr` <https://zh.cppreference.com/w/cpp/memory/unique_ptr>
 
 std::vector<std::string> RECORDS;
@@ -66,7 +66,7 @@ int main(int argc, char **argv) {
     for (auto i = 0; i < 3; ++i) {
         ASSERT(problems[i].size() == answers[i].size(), "wrong size");
         for (auto j = 0; j < problems[i].size(); ++j) {
-            ASSERT(std::strcmp(problems[i][j].c_str(), answers[i][j]) == 0, "wrong location");
+            ASSERT(strcmp(problems[i][j].c_str(), answers[i][j]) == 0, "wrong location");
         }
     }
 
